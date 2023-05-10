@@ -19,11 +19,11 @@ WORKDIR /usr/share/nginx/html
 # Установка переменных окружения
 ENV POSTGRES_PASSWORD=postgres_password
 
-# Копирование файлов в контейнер
-COPY index.html /usr/share/nginx/html/index.html
+# Добавление файлов в контейнер
+ADD index.html /usr/share/nginx/html/index.html
 
-# Создание объема для хранения данных БД
-VOLUME /var/lib/postgresql/13/main
+# Создание папки для хранения данных БД
+VOLUME /var/lib/postgresql/12/main
 
 # Установка пользователя
 USER nginx
@@ -31,5 +31,5 @@ USER nginx
 # Открытие портов
 EXPOSE 80 5432
 
-# Запуск команды при запуске контейнера
-CMD ["nginx", "-g", "daemon off;"]
+# Запускаем PostgreSQL и Nginx при старте контейнера
+CMD ["postgres", "-D", "/var/lib/postgresql/12/main", "&&", "nginx", "-g", "daemon off;"]
