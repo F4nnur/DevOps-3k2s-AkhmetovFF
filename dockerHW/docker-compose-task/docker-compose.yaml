@@ -1,0 +1,36 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    container_name: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d
+      - ./html:/usr/share/nginx/html
+    ports:
+      - "8080:80"
+    networks:
+      app-network:
+        aliases:
+          - web
+  postgres:
+    image: postgres
+    container_name: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database
+    networks:
+      app-network:
+        aliases:
+          - new_db
+          - dev_db
+networks:
+  app-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.10.0/28
+volumes:
+  pgdata:
