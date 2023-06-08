@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a81c01d6-cab5-4a3f-8547-45f3fd79ada6" name="Changes" comment="+final docker-compose file">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerHW/Docker/123.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerHW/Docker/FIKI_Requirements.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerHW/Docker/LLD.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerHW/Docker/Use case + Activity Diagramm..pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/.pre-commit-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/alembic/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/alembic/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/alembic/script.py.mako" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/alembic/versions/fff679895c66_create_user_role_summary_and_comment_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/poetry.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/screen/created_user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/screen/grafana_logs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/screen/photo_2023-06-08_17-16-49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/handlers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/redis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/routers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/routers/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/routers/comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/routers/summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/routers/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/schemas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/schemas/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/schemas/comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/schemas/role.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/schemas/summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/schemas/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/services/comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/services/summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/src/services/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/auth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/auth/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/auth/test_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/summaries/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/summaries/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/summaries/test_create_summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/users/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/users/test_create_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/users/test_delete_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/users/test_read_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_task/fiki_backend/tests/users/test_update_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerHW/docker-compose-task/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerHW/docker-compose-task/docker-compose.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PcDWSUX2hK1FBksRCP27I7l86F" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/fannur/DevOps-3k2s-AkhmetovFF",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dockerHW/docker-compose-task/nginx.conf" />
+      <recent name="$PROJECT_DIR$/dockerHW/docker-compose-task" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dockerHW/docker-compose-task/nginx/conf.d" />
+      <recent name="$PROJECT_DIR$/dockerHW/Docker" />
+      <recent name="$PROJECT_DIR$/dockerHW/docker-compose" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a81c01d6-cab5-4a3f-8547-45f3fd79ada6" name="Changes" comment="" />
+      <created>1683747507729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683747507729</updated>
+      <workItem from="1683747508938" duration="33000" />
+      <workItem from="1683747571414" duration="10036000" />
+      <workItem from="1683757707589" duration="2702000" />
+      <workItem from="1684326669781" duration="4239000" />
+      <workItem from="1684330993298" duration="164000" />
+      <workItem from="1684562220320" duration="16000" />
+      <workItem from="1686242151620" duration="346000" />
+    </task>
+    <task id="LOCAL-00001" summary="+2nd task docker-compose">
+      <created>1683753157308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683753157308</updated>
+    </task>
+    <task id="LOCAL-00002" summary="+fix 1st docker task">
+      <created>1683757987415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683757987415</updated>
+    </task>
+    <task id="LOCAL-00003" summary="+final docker-compose file">
+      <created>1684330868907</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684330868907</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="+2nd task docker-compose" />
+    <MESSAGE value="+fix 1st docker task" />
+    <MESSAGE value="+final docker-compose file" />
+    <option name="LAST_COMMIT_MESSAGE" value="+final docker-compose file" />
+  </component>
+</project>
