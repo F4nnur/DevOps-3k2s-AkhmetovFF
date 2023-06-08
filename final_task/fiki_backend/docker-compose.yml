@@ -1,0 +1,56 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:12-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_USER_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - '5432-5432'
+    networks:
+      - appnet
+
+  redis:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6378:6379'
+    command: redis-server --save 20 1 --loglevel warning --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - cache:/data
+    networks:
+      - appnet
+
+  app:
+    build: .
+    volumes:
+      - ./src:/fiki/src
+    ports:
+      - '80:80'
+    depends_on:
+      - db
+      - redis
+    networks:
+      - appnet
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - appnet
+
+networks:
+  appnet:
+
+volumes:
+  postgres_data:
+  cache:
+    driver: local
+  grafana_data:
